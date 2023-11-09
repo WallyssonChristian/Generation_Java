@@ -19,7 +19,7 @@ public class Atividade04 {
 		n4 = leia.nextFloat();
 		
 		float valorFinal = ((n1*n2)-(n3*n4));
-		System.out.println("Sua média é: " + valorFinal);
+		System.out.println("Diferença: " + valorFinal);
 
 	}
 
