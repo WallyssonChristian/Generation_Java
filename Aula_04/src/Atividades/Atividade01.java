@@ -18,7 +18,7 @@ public class Atividade01 {
 			System.out.println("Intervalo inválido!");
 		} else {
 			System.out.printf("No Intervalo entre %d e %d:\n\n", a, b);
-			for(int i = a; i <= b; i+=5) {
+			for(int i = a; i <= b; i++) {
 				if(i % 3 == 0 && i % 5 ==0) {
 					System.out.printf("%d é multiplo de 3 e 5\n", i);
 				}
