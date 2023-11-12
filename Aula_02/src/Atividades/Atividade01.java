@@ -8,13 +8,13 @@ public class Atividade01 {
 	public static void main(String[] args) {
 		
 		float salario, abono;
-		
-		System.out.println("Digite o Salário: ");
+		System.out.println("Boas vindas!\n\nEsse programa te auxiliará no cálculo do novo salário após aplicação do abono salarial.");
+		System.out.println("Digite o salário: ");
 		salario = leia.nextFloat();
-		System.out.println("Digite o Abono: ");
+		System.out.println("Digite o abono: ");
 		abono = leia.nextFloat();
 		
 		float novoSalario = salario + abono;
-		System.out.println("Seu novo salário é: " + novoSalario);
+		System.out.println("Seu novo salário é: R$" + novoSalario);
 	}
 }
