@@ -14,10 +14,10 @@ public class Vetores {
 
 		System.out.println("\n");
 		
-		/*for(int indice = 0; indice < 5; indice++) {
+		for(int indice = 0; indice < 5; indice++) {
 			System.out.println("Digite um valor para a posição [" + indice + "] = ");
 			notas[indice] = leia.nextFloat();
-		}*/
+		}
 		
 		for(int indice = 0; indice < notas.length; indice++) 
 			System.out.println("Posição " + indice + " = " + notas[indice]);

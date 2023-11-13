@@ -6,14 +6,6 @@ public class Atividade04 {
 
 	static Scanner leia = new Scanner(System.in);
 	public static void main(String[] args) {
-		/* Elabore um algoritmo que leia as notas 
-		 * de uma classe com 10 participantes durante 
-		 * 4 bimestres de um ano. As 4 notas de cada 
-		 * participante serão armazenadas em uma linha 
-		 * de uma matriz de números reais, logo cada 
-		 * linha da matriz serão as notas de um participante. 
-		 * Em um vetor de números reais, armazene as médias de 
-		 * cada participante e exiba as médias de cada um na tela. */
 		
 		double[][] alunosNota = new double[10][4];
 		double[] mediaAluno = new double[10];
@@ -23,6 +15,8 @@ public class Atividade04 {
 		//		{9, 6.5, 7.6, 8.2}, {5, 5, 5, 6.3}, {7, 8, 9, 8.5}, {5.5, 3.5, 2.5, 1}, 
 		//		{8, 9, 10, 9.5}, {5.6, 5.8, 6.5, 7}, {7.5, 8.5, 9.5, 10}};              // Matriz Teste
 		
+		
+		// Lendo valores da Matriz
 		for(int iLinha = 0; iLinha < alunosNota.length; iLinha++) {
 			for(int iColuna = 0; iColuna < alunosNota[iLinha].length; iColuna++)  {
 				System.out.print("Valor Matriz: ");
