@@ -1,24 +1,22 @@
 package Atividades2;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
+import java.util.Stack;
 
-
-public class Atividade01 {
+public class Atividade02 {
 
 	static Scanner leia = new Scanner(System.in);
 	public static void main(String[] args) {
-
-		Queue<String> fila = new LinkedList<String>();
+		
+		Stack<String> pilha = new Stack<String>();
 		String nome;
-		int op = 9;
+		int op;
 		
 		do {
 			System.out.println("\n*********************************************\n");
-			System.out.println("	1 - Adicionar Cliente na Fila");
-			System.out.println("	2 - Listar todos os Clientes");
-			System.out.println("	3 - Retirar Cliente da Fila");
+			System.out.println("	1 - Adicionar Livro na pilha");
+			System.out.println("	2 - Listar todos os Livros");
+			System.out.println("	3 - Retirar Livro da pilha");
 			System.out.println("	0 - Sair\n");
 			System.out.println("*********************************************");
 			System.out.print("Entre com a opção desejada: ");
@@ -28,34 +26,34 @@ public class Atividade01 {
 				System.out.print("Digite o nome: ");
 				leia.skip("\\R");
 				nome = leia.nextLine();
-				fila.add(nome);
-				System.out.println("\nFila: ");
-				for(var s: fila) {
+				pilha.add(nome);
+				System.out.println("\nPilha: ");
+				for(var s: pilha) {
 					System.out.println(s);
 				}
-				System.out.println("\nCliente Adicionado!");
+				System.out.println("\nLivro adicionado!");
 				break;
 			case 2:
-				if(!fila.isEmpty()) {
-					System.out.println("\nLista de Clientes na Fila: ");
-					for(var s: fila) {
+				if(!pilha.isEmpty()) {
+					System.out.println("\nLista de Livros na Pilha: ");
+					for(var s: pilha) {
 						System.out.println(s);
 					}
 					break;
 				}
-				System.out.println("A Fila está vazia!");
+				System.out.println("A Pilha está vazia!");
 				break;
 			case 3:
-				if(!fila.isEmpty()) {
-					fila.remove();
-					System.out.println("\nFila: ");
-					for(var s: fila) {
+				if(!pilha.isEmpty()) {
+					pilha.pop();
+					System.out.println("\nPilha: ");
+					for(var s: pilha) {
 						System.out.println(s);
 					}
-					System.out.println("\nO cliente foi Chamado!");
+					System.out.println("\nO Livro foi retirado da pilha!");
 					break;
 				}
-				System.out.println("\nA Fila está vazia!");
+				System.out.println("\nA Pilha está vazia!");
 				break;	
 			case 0:
 				System.out.println("\nPrograma Finalizado!");
@@ -66,5 +64,7 @@ public class Atividade01 {
 			}
 		
 		} while (op!=0);
+
 	}
+
 }
