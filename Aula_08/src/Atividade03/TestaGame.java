@@ -4,11 +4,12 @@ public class TestaGame {
 
 	public static void main(String[] args) {
 		
-		Produto p1 = new Produto("City Skylines", "55505056605", "14", 1, 80.0f);
-		Produto p2 = new Produto("Refactor", "55505056606", "16", 2, 200.0f);
+		Jogo j1 = new Jogo("City Skylines", "55505056605", 80.0f, 1, "14");
+		Acessorio a1 = new Acessorio("Dualshock", "55505056606", 200.0f, 2, "Bluetooth");
 
-		p1.visualizar();
-		p2.visualizar();
+		j1.visualizar();
+		a1.visualizar();
+		System.out.println(a1.calcularImposto());
 
 	}
 
